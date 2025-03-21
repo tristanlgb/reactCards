@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +32,14 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                   <Card.Text>
                     A frontend app built using vanilla JavaScript and Bootstrap.
                   </Card.Text>
+                  <a
+                    href="https://proyecto-final-lenzberg.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light mt-2"
+                  >
+                    Go to Ecommerce Example
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -44,6 +51,14 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                   <Card.Text>
                     A React + TypeScript dashboard with chart integrations.
                   </Card.Text>
+                  <a
+                    href="https://proyecto-final-lenzberg.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light mt-2"
+                  >
+                    Go to Ecommerce Example
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -55,6 +70,14 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                   <Card.Text>
                     RESTful API using Express.js and MongoDB for data storage.
                   </Card.Text>
+                  <a
+                    href="https://proyecto-final-lenzberg.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light mt-2"
+                  >
+                    Go to Ecommerce Example
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -66,6 +89,14 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                   <Card.Text>
                     A scalable backend with NestJS using decorators and modules.
                   </Card.Text>
+                  <a
+                    href="https://proyecto-final-lenzberg.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-light mt-2"
+                  >
+                    Go to Ecommerce Example
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
@@ -118,3 +149,4 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
 };
 
 export default Projects;
+
