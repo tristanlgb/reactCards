@@ -38,9 +38,7 @@ const HireMe: React.FC<HireMeProps> = ({ darkMode }) => {
             of web development. If you're looking for someone technically strong, detail-oriented, and passionate — let's build something amazing.
           </Card.Text>
 
-        
-            🔗 GitHub
-          </Card.Link>
+      
         </Card.Body>
       </Card>
     </div>
