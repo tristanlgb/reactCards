@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Card, Form, Button, Row, Col } from 'react-bootstrap';
+import { Card, Button, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface ContactProps {
@@ -37,33 +36,16 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
 
           <hr />
 
-          {/* Contact Form */}
-          <h5 className="mb-3">Send me a message</h5>
-          <Form>
-            <Row>
-              <Col md={6}>
-                <Form.Group className="mb-3" controlId="formName">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter your name" />
-                </Form.Group>
-              </Col>
-              <Col md={6}>
-                <Form.Group className="mb-3" controlId="formEmail">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Enter your email" />
-                </Form.Group>
-              </Col>
-            </Row>
-
-            <Form.Group className="mb-3" controlId="formMessage">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={4} placeholder="Type your message here..." />
-            </Form.Group>
-
-            <Button variant={darkMode ? 'light' : 'primary'} type="submit">
-              Send Message
-            </Button>
-          </Form>
+          {/* CV Download */}
+          <h5 className="mb-3">You can download my CV below:</h5>
+          <Button
+            variant={darkMode ? 'light' : 'primary'}
+            href="https://drive.google.com/file/d/19B1OwjsYbhmdU3la8bvefOlvDcabEieC/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </Button>
         </Card.Body>
       </Card>
     </div>
@@ -71,3 +53,4 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
 };
 
 export default Contact;
+
