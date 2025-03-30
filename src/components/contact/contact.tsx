@@ -40,7 +40,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
           <h5 className="mb-3">You can download my CV below:</h5>
           <Button
             variant={darkMode ? 'light' : 'primary'}
-            href="https://drive.google.com/file/d/19B1OwjsYbhmdU3la8bvefOlvDcabEieC/view?usp=sharing"
+            href="https://drive.google.com/file/d/17s9NG6JMoXh_R_TZlW4IbBgs_wToMUcI/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
           >
