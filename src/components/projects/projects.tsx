@@ -8,6 +8,7 @@ interface ProjectsProps {
 
 const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
   const cardClass = darkMode ? 'bg-secondary text-light' : '';
+  const buttonClass = darkMode ? 'btn-outline-light' : 'btn-outline-dark';
 
   return (
     <div
@@ -36,7 +37,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                     href="https://proyecto-final-lenzberg.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-light mt-2"
+                    className={`btn mt-2 ${buttonClass}`}
                   >
                     Go to Ecommerce Example
                   </a>
@@ -55,7 +56,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                     href="https://proyecto-final-lenzberg.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-light mt-2"
+                    className={`btn mt-2 ${buttonClass}`}
                   >
                     Go to Ecommerce Example
                   </a>
@@ -74,7 +75,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                     href="https://proyecto-final-lenzberg.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-light mt-2"
+                    className={`btn mt-2 ${buttonClass}`}
                   >
                     Go to Ecommerce Example
                   </a>
@@ -93,7 +94,7 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
                     href="https://proyecto-final-lenzberg.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-light mt-2"
+                    className={`btn mt-2 ${buttonClass}`}
                   >
                     Go to Ecommerce Example
                   </a>
@@ -149,4 +150,3 @@ const Projects: React.FC<ProjectsProps> = ({ darkMode }) => {
 };
 
 export default Projects;
-
