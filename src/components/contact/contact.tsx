@@ -30,7 +30,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
             </Col>
             <Col md={6}>
               <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tristanlenzberg" target="_blank" rel="noopener noreferrer">Tristan Lenzberg</a></p>
-              <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@__2tristan" target="_blank" rel="noopener noreferrer">@__2tristan</a></p>
+             
             </Col>
           </Row>
 
