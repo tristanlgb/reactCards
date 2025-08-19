@@ -37,7 +37,7 @@ const Home: React.FC<HomeProps> = ({ darkMode }) => {
               <Accordion.Body className="text-center">
                 <Button
                   variant="primary"
-                  href="https://tu-proyecto.vercel.app"
+                  href="https://apiticketsavionvercel.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
