@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Accordion } from 'react-bootstrap';
+import { Card, Accordion, Button } from 'react-bootstrap';
 
 interface HomeProps {
   darkMode: boolean;
@@ -33,27 +33,16 @@ const Home: React.FC<HomeProps> = ({ darkMode }) => {
 
           <Accordion>
             <Accordion.Item eventKey="0">
-              <Accordion.Header>🔐 Type Safety</Accordion.Header>
-              <Accordion.Body>
-                Prevents common bugs at compile time with static typing.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>📦 Better Code Structure</Accordion.Header>
-              <Accordion.Body>
-                Interfaces and types help organize code and ensure consistency.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>🛠 Developer Tooling</Accordion.Header>
-              <Accordion.Body>
-                Great autocompletion, refactoring tools, and IDE support.
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="3">
-              <Accordion.Header>🌐 Ideal for Modern WebApps</Accordion.Header>
-              <Accordion.Body>
-                TypeScript is widely adopted in professional frontend and backend stacks.
+              <Accordion.Header>✈️ Proyecto API de Tickets de Avión</Accordion.Header>
+              <Accordion.Body className="text-center">
+                <Button
+                  variant="primary"
+                  href="https://tu-proyecto.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  IR AL PROYECTO API DE TICKETS DE AVION
+                </Button>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
@@ -64,3 +53,4 @@ const Home: React.FC<HomeProps> = ({ darkMode }) => {
 };
 
 export default Home;
+
