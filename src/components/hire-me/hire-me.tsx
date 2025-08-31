@@ -1,6 +1,12 @@
-
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import {
+  Card,
+  Accordion,
+  Row,
+  Col,
+  ListGroup,
+  Badge
+} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 interface HireMeProps {
@@ -11,38 +17,72 @@ const HireMe: React.FC<HireMeProps> = ({ darkMode }) => {
   return (
     <div
       className="d-flex justify-content-center align-items-center"
-      style={{ height: '100vh', width: '100vw' }}
+      style={{ minHeight: '100vh', width: '100vw', padding: '1rem' }}
     >
       <Card
-        style={{ width: '90%', height: '90%', overflowY: 'auto' }}
+        style={{ width: '95%', maxWidth: 1000, overflowY: 'auto' }}
         id="hireme"
-        className={darkMode ? 'bg-dark text-light' : ''}
+        className={`${darkMode ? 'bg-dark text-light' : ''} shadow`}
       >
         <Card.Body>
-          <Card.Title className="fs-2">🚀 Hire Me</Card.Title>
-          <Card.Subtitle className="mb-3 text-muted">Why I'm a strong full stack developer</Card.Subtitle>
+          {/* Header */}
+          <Card.Title className="fs-2 mb-2">🚀 Hire Me</Card.Title>
+          <Card.Subtitle className="mb-3 text-muted">
+            Why I’m a strong full-stack developer
+          </Card.Subtitle>
 
-          <Card.Text>
-            Hi! I'm <strong>Tristan Lenzberg</strong>, a passionate Full Stack Developer based in <strong>Buenos Aires</strong>.
-            I specialize in crafting modern, scalable web applications using powerful technologies like <strong>React</strong>,
-            <strong> TypeScript</strong>, and <strong>Vite</strong> on the frontend — combined with robust, maintainable
-            backends using <strong>NestJS</strong>.
+          <p className="mb-4" style={{ lineHeight: 1.6 }}>
+            Hi! I’m <strong>Tristan Lenzberg</strong>, a passionate Full Stack Developer based in <strong>Buenos Aires</strong>.  
+            I studied <strong>Communications</strong> at the <strong>University of Buenos Aires</strong> and trained as a <strong>Full Stack Developer at Coderhouse</strong>.  
+            My background helps me combine technical skills with strong communication abilities to deliver scalable, user-friendly apps.
+          </p>
 
-            <br /><br />
-            My focus on clean architecture, reusable components, and performance-driven design ensures that I build apps
-            that not only work great but are easy to scale and maintain. Whether it's designing intuitive UI/UX,
-            implementing secure APIs, or integrating with cloud services, I bring a balanced mix of frontend and backend skills.
+          {/* Quick stack badges */}
+          <div className="d-flex flex-wrap gap-2 mb-4">
+            <Badge bg={darkMode ? 'light' : 'dark'} text={darkMode ? 'dark' : 'light'}>
+              React + TypeScript
+            </Badge>
+            <Badge bg="primary">NestJS</Badge>
+            <Badge bg="success">Express.js</Badge>
+            <Badge bg="warning" text="dark">
+              MongoDB
+            </Badge>
+            <Badge bg="info" text="dark">
+              APIs & Auth
+            </Badge>
+          </div>
 
-            <br /><br />
-            I'm committed to writing quality code, collaborating with teams, and continuously learning to stay at the forefront
-            of web development. If you're looking for someone technically strong, detail-oriented, and passionate — let's build something amazing.
-          </Card.Text>
+          {/* Accordion Sections */}
+          <Accordion alwaysOpen>
+            <Accordion.Item eventKey="about">
+              <Accordion.Header>🧑‍💻 About Me</Accordion.Header>
+              <Accordion.Body>
+                I specialize in crafting modern, scalable web applications.  
+                On the frontend, I use <strong>React + TypeScript</strong> with a focus on clean UI, reusability, and responsive design.  
+                On the backend, I rely on <strong>NestJS/Express</strong> and <strong>MongoDB</strong> for robust, maintainable APIs.
+              </Accordion.Body>
+            </Accordion.Item>
 
-      
-        </Card.Body>
-      </Card>
-    </div>
-  );
-};
+            <Accordion.Item eventKey="strengths">
+              <Accordion.Header>💡 Strengths</Accordion.Header>
+              <Accordion.Body>
+                <Row>
+                  <Col md={6}>
+                    <h6 className="mb-2">Technical</h6>
+                    <ListGroup variant={darkMode ? 'dark' : undefined}>
+                      <ListGroup.Item>Clean architecture & scalable code</ListGroup.Item>
+                      <ListGroup.Item>Strong TypeScript typing & DTOs</ListGroup.Item>
+                      <ListGroup.Item>REST API design & validation</ListGroup.Item>
+                      <ListGroup.Item>Authentication (JWT, Passport)</ListGroup.Item>
+                    </ListGroup>
+                  </Col>
+                  <Col md={6}>
+                    <h6 className="mb-2">Professional</h6>
+                    <ListGroup variant={darkMode ? 'dark' : undefined}>
+                      <ListGroup.Item>Clear communication skills</ListGroup.Item>
+                      <ListGroup.Item>Team collaboration & code reviews</ListGroup.Item>
+                      <ListGroup.Item>Problem-solving mindset</ListGroup.Item>
+                      <ListGroup.Item>Continuous learner</ListGroup.Item>
+                    </ListGroup>
+                  </Col>
 
-export default HireMe;
