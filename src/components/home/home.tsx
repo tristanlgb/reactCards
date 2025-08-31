@@ -129,7 +129,7 @@ const Home: React.FC<HomeProps> = ({ darkMode }) => {
                   Want to collaborate or review some code? I’m happy to chat.
                 </p>
                 <p className="mb-0">
-                  <a href="mailto:tristan@example.com">tristan@example.com</a> ·{' '}
+                  <a href="mailto:tristanlgb@hotmail.com">tristanlgb@hotmail.com</a> ·{' '}
                   <a
                     href="https://github.com/tristanlgb"
                     target="_blank"
@@ -139,7 +139,7 @@ const Home: React.FC<HomeProps> = ({ darkMode }) => {
                   </a>{' '}
                   ·{' '}
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/tristanlenzberg1234"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
